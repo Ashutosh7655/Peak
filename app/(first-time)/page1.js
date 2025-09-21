@@ -5,6 +5,7 @@ import {
 
   TouchableOpacity,
 } from "react-native";
+import Feather from '@expo/vector-icons/Feather';
 import { useRouter } from "expo-router";
 import Svg, { Path } from "react-native-svg";
 export default function Page1Screen() {
@@ -14,6 +15,17 @@ export default function Page1Screen() {
       source={require("../../assets/3.png")}
       style={{ flex: 1, justifyContent: "center" ,backgroundColor: "#000"}}
     >
+      <View style={{
+    position: "absolute",
+    top: 60,
+    right: 30}}>
+      <TouchableOpacity onPress={()=>router.replace("../(onboarding)/")}>
+      <View style={{flexDirection:"row"}}>
+        <Text style={{color:"#E2F163",fontSize:16}}>Skip</Text>
+        <Feather name="skip-forward" size={24} color="#E2F163" />
+      </View>
+      </TouchableOpacity>
+      </View>
       <View style={{ flex: 1, justifyContent: "center" }}>
         <View
           style={{
