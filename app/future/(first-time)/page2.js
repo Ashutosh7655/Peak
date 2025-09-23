@@ -53,7 +53,7 @@ export default function Page2Screen() {
                 width: 10,
                 height: 10,
                 borderRadius: 5,
-                backgroundColor: "white",
+                backgroundColor: "gray",
                 margin: 5,
               }}
             />
@@ -62,7 +62,7 @@ export default function Page2Screen() {
                 width: 10,
                 height: 10,
                 borderRadius: 5,
-                backgroundColor: "gray",
+                backgroundColor: "white",
                 margin: 5,
               }}
             />
@@ -88,7 +88,7 @@ export default function Page2Screen() {
         >
 
           <TouchableOpacity
-            onPress={() => router.replace("../(onboarding)/")}
+            onPress={() => router.replace("../(setup)/")}
             activeOpacity={1}
             style={{borderColor:"#fff",borderWidth:1,borderRadius:8,paddingVertical:12,paddingHorizontal:80,
             }}

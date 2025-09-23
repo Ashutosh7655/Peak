@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function nutrition() {
   return (
     <View style={styles.container}>
-      <Text>Nutrition</Text>
+      <Text>This featur is comming </Text>
       <StatusBar style="auto" />
     </View>
   );
